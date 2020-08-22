@@ -37,7 +37,7 @@ class User {
   @Expose({ name: 'avatar_url' })
   getAvatarUrl(): string | null {
     if (!this.avatar) {
-      return null;
+      return 'https://png.pngtree.com/element_our/png/20181206/users-vector-icon-png_260862.jpg';
     }
 
     switch (uploadConfig.driver) {
